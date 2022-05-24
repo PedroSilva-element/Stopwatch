@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+
+    <link rel="stylesheet" href="../stylesheets/stylepage.css">
+    <script src="../js/automation.js" defer></script>
+</head>
+
+<body>
+    <div id="anchor">
+        <!--Corpo do Cronômetro-->
+        <section>
+            <!--Monitor-->
+            <div class="monitor">
+                <span class="horas">00</span>:
+                <span class="minutos">00</span>:
+                <span class="segundos">00</span>:
+                <span class="decimos">00</span>
+            </div>
+            <!--Funcionalidades-->
+
+            <div class="botoes">
+                <button class="continue" onclick="comecar()"><img src="../images/continuar.png"></button>
+                <button class="pause" onclick="pausar()"><img src="../images/pausa.png"></button>
+                <button class="zero" onclick="zerar()"><img src="../images/zero.png"></button>
+            </div>
+
+            <!--Histórico-->
+            <div class="historico"></div>
+        </section>
+    </div>
+</body>
+
+</html>
